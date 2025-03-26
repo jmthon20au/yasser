@@ -26,23 +26,21 @@
     <!-- شريط التنقل -->
     <header>
         <div class="container">
-            <img src="yaseer.jpg" alt="شعار" class="small-logo">
-            <nav>
+            <img src="lraq.ico" alt="شعار" class="small-logo">
+<nav>
                 <ul>
-                    <li><a href="#about">نبذة</a></li>
-                    <li><a href="#services">الخدمات</a></li>
-                    <li><a href="#location">الموقع الجغرافي</a></li>
-                    <li><a href="#contact">خدمة العملاء</a></li>
-                    <li><a href="#opinions">الآراء</a></li>
-                    <li><a href="#posts">المنشورات</a></li>
+                    <li><a href="posts.html">المنشورات</a></li>
+                    <li><a href="books.html">الكتب</a></li>
+                   
+                    <li><a href="contact.html">خدمة العملاء</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- العنوان مع الأيقونة -->
 <div class="header">
-    <img src="lraq.ico" alt="الشعار العراقي" class="icon">
-    <h1>ياسر اسكندر</h1>
+    <img src="yaseer.jpg" alt="الشعار العراقي" class="icon">
+    <h1>النائب ياسر اسكندر وتوت</h1>
 </div>
 
 <style>
@@ -57,15 +55,15 @@
 
     /* تصميم الأيقونة */
     .icon {
-        width: 50px; /* عرض الأيقونة */
+        width: 80px; /* عرض الأيقونة */
         height: auto;
         margin-right: 15px;
     }
 
     /* تصميم النص */
     h1 {
-        color: #FFD700; /* اللون الذهبي */
-        font-size: 36px;
+        color: #000000; /* اللون الذهبي */
+        font-size: 30px;
         font-weight: bold;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* تأثير الظل على النص */
     }
@@ -121,29 +119,7 @@
     }
 </script>
     
-    <section id="countdown" style="text-align: center; padding: 30px; background-color: #f8f9fa;">
-    <h2>العد التنازلي للحدث القادم</h2>
-    <div id="countdown-timer" style="font-size: 24px; font-weight: bold;"></div>
-</section>
 
-<script>
-    const targetDate = new Date("2025-05-01T00:00:00Z");
-
-    function updateCountdown() {
-        const now = new Date();
-        const timeLeft = targetDate - now;
-
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.getElementById('countdown-timer').textContent = `${days} يوم, ${hours} ساعة, ${minutes} دقيقة, ${seconds} ثانية`;
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-</script>
     <!-- قسم التاريخ والوقت -->
 <section id="date-time" style="text-align: center; padding: 30px 0; background-color: #f8f9fa;">
     <div style="font-size: 24px; color: #333;">
@@ -199,6 +175,129 @@
     // استدعاء الوظيفة لتحديث التاريخ والوقت عند تحميل الصفحة
     updateDateTime();
 </script>
+
+
+
+<!-- قسم أرقام الهاتف -->
+
+    <!-- باقي الأقسام -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-box">
+            <h2 class="section-title">نبذة عن ياسر اسكندر</h2>
+            <div class="about-content">
+                <p><span>📍 المواليد:</span> 1981 - الحلة، القصبة القديمة</p>
+                <p><span>🎓 المؤهلات العلمية:</span></p>
+                <ul>
+                    <li>بكالوريوس علوم عسكرية - الكلية العسكرية الرابعة (2006)</li>
+                    <li>بكالوريوس تربية أساسية - قسم التاريخ</li>
+                </ul>
+                <p><span>💼 المناصب التي شغلها:</span></p>
+                <ul>
+                    <li>ضابط أمن قيادة عمليات بابل</li>
+                    <li>ضابط أمن قيادة عمليات الفرات الأوسط</li>
+                    <li>ضابط أمن أمرية موقع بابل</li>
+                    <li>مدير مكتب مدير الاستخبارات العسكرية</li>
+                </ul>
+                <ul>
+                <p><span>📌 عنوان المكتب:</span></p>
+<li>العراق_بابل_حلة شارع الكرامة ، مكتب النائب ياسر اسكندر وتوت</li>
+</ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services">
+    <h2>الخدمات</h2>
+    <div class="services-container">
+
+        <div class="service">
+            <img src="ser1.jpg" alt="خدمة 1">
+            <h3>تخصيص قطع أراضٍ للقوات الأمنية في بابل</h3>
+            <p><span>#تخصيص_قطع_اراضي_للقوات_الامنية_بابل</span></p>
+            <p>استكمالاً لأمر القائد العام للقوات المسلحة والمتابعة الحثيثة من قبل النائب ياسر اسكندر وتوت، في تخصيص قطع أراضٍ سكنية لأبناء قواتنا الأمنية في محافظة بابل. مكتب رئيس الوزراء يفاتح وزارة المالية - دائرة عقارات الدولة لتخصيص قطعة الأرض المقترحة.</p>
+            <p><span>#النائب_ياسر_اسكندر_وتوت</span></p>
+        </div>
+
+        <div class="service">
+            <img src="ser2.jpg" alt="خدمة 2">
+            <h3>مستشفى التركي</h3>
+            <p>بعد الجدل الكبير حول أداء الشركة في المستشفى التركي 
+تمكن النائب ياسر إسكندر وتوت من الحصول على موافقة هامش 
+رئيس الوزراء على اعادة تقيم عمل الشركة والنظر في تحويل 
+عقد تشغيل المستشفى إلى محافظة أخرى .</p>
+        </div>
+
+        <div class="service">
+            <img src="ser3.jpg" alt="خدمة 3">
+            <h3>كتاب شكر وتقدير للضباط</h3>
+            <p><span>#شكر_وتقدير_لمديرية_الدفاع_المدني_في_بابل </span>
+النائب ياسر اسكندر وتوت، يستحصل موافقة القائد العام 
+للقوات المسلحة، على منح  #كتاب_شكر_وتقدير لضباط 
+ومنتسبي مديرية الدفاع المدني في بابل، تثميناً لجهودهم 
+المبذولة في سحب مياه الامطار خلال الموجة الاخيرة
+ويأتي ذلك اثناء تجوال النائب وتوت في المحافظة خلال 
+مرحلة الامطار الغزيرة، وأوعدهم بكتاب شكر وتقدير؛ لما 
+شاهده من جد وتفان في تنفيذ واجباتهم واليوم اوفي بوعده.
+<span>#عضو_لجنة_الامن_والدفاع_النيابية</span>
+<span>#النائب_ياسر_اسكندر_وتوت</span>
+</p>
+        </div>
+
+        <div class="service">
+            <img src="ser4.jpg" alt="خدمة 4">
+            <h3>شكر وتقدير للصيادلة</h3>
+            <p>#شكر_وتقدير_للصيادلة_من_رئيس_الوزراء
+
+رئيس كتلة وطن النيابية النائب ياسر اسكندر وتوت
+ وبجهود حثيثة يستحصل كتاب #شكر_وتقدير للصيادلة
+ العراقيين من السيد رئيس مجلس الوزراء، تثميناً للجهود
+ المميزة الني يبذلونها في المهام والواجبات المناطة لهم .
+
+#مبارك_لكم
+#النائب_ياسر_اسكندر_وتوت
+</p>
+        </div>
+
+    </div>
+</section>
+    <section id="countdown" style="text-align: center; padding: 30px; background-color: #f8f9fa;">
+    <h2>العد التنازلي للحدث القادم</h2>
+    <div id="countdown-timer" style="font-size: 24px; font-weight: bold;"></div>
+</section>
+
+<script>
+    const targetDate = new Date("2025-03-01T00:00:00Z");
+
+    function updateCountdown() {
+        const now = new Date();
+        const timeLeft = targetDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown-timer').textContent = `${days} يوم, ${hours} ساعة, ${minutes} دقيقة, ${seconds} ثانية`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+<a href="posts.html" class="btn-posts">
+    <i class="fas fa-newspaper"></i> عرض المنشورات
+</a>
+
+<!-- زر للانتقال إلى قسم "كتب النائب" من الصفحة الرئيسية -->
+<a href="books.html" class="btn btn-books">
+    <i class="fas fa-book"></i> كتب النائب
+</a>
+
+<a href="contact.html" class="btn btn-contact">
+    <i class="fas fa-headset"></i> خدمة العملاء
+</a>
+
+
     <!-- قسم الصور الخاصة بالنائب -->
 <section id="gallery" style="background-color: #f8f9fa; padding: 40px 20px; text-align: center;">
     <h2 style="font-size: 30px; font-weight: bold; color: #333; margin-bottom: 30px;">صور النائب ياسر اسكندر</h2>
@@ -207,18 +306,14 @@
         <div class="gallery-item" style="flex: 0 0 auto; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
             <img src="images/1.jpg" alt="صورة النائب 1" class="gallery-image" style="width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s ease;">
         </div>
-
         <!-- الصورة الثانية -->
         <div class="gallery-item" style="flex: 0 0 auto; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
             <img src="images/2.jpg" alt="صورة النائب 2" class="gallery-image" style="width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s ease;">
         </div>
-
         <!-- الصورة الثالثة -->
         <div class="gallery-item" style="flex: 0 0 auto; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
             <img src="images/3.jpg" alt="صورة النائب 3" class="gallery-image" style="width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s ease;">
         </div>
-
-        <!-- أضف المزيد من الصور هنا -->
     </div>
 
     <!-- مؤشر التمرير لعرض المزيد من الصور -->
@@ -229,7 +324,6 @@
         </div>
     </div>
 </section>
-
 <!-- إضافة JavaScript لتأثير التكبير عند التمرير -->
 <script>
     // الحصول على جميع الصور داخل المعرض
@@ -255,109 +349,39 @@
         100% { transform: translateX(100%); }
     }
 </style>
-<!-- قسم أرقام الهاتف -->
-<section id="contact-numbers" style="background-color: #f8f9fa; padding: 40px 20px; text-align: center;">
+    <section id="opinions">
+        <h2>آراء المواطنين</h2>
+        <p>كل معاني الحب والتقدير أقدمها لكم يا خير من أدى العمل وحقق الأهداف، وها أنتم اليوم تقفون على أعتاب النجاح بكل فخرٍ أنكم أديتم الأمانة ، فمن يعمل بكل هذا الجهد والإخلاص يستحق أن يكون ضمن المتميزين والمشكورين والمكرمين فشكرًا لكم.وأملين من الله الايفاء والوفاء لكم
+دمت ذخرآ وعزآ الى اهالي بابل الكرام</p>
+    </section>
+    <section id="contact-numbers" style="background-color: #f8f9fa; padding: 40px 20px; text-align: center;">
     <h2 style="font-size: 30px; font-weight: bold; color: #333; margin-bottom: 30px;">أرقام الهاتف</h2>
     <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
         <!-- الرقم الأول -->
         <div style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
             <i class="fas fa-phone-alt" style="font-size: 40px; color: #007bff;"></i>
-            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف 1</h3>
-            <p style="font-size: 16px; color: #555;">+964 123 456 789</p>
-            <a href="tel:+964123456789" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
-                <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> اتصال الآن
-            </a>
-        </div>
-        
-        <!-- الرقم الثاني -->
-        <div style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
-            <i class="fas fa-phone-alt" style="font-size: 40px; color: #007bff;"></i>
-            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف 2</h3>
-            <p style="font-size: 16px; color: #555;">+964 987 654 321</p>
-            <a href="tel:+964987654321" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
-                <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> اتصال الآن
-            </a>
-        </div>
-
-        <!-- الرقم الثالث -->
-        <div style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
-            <i class="fas fa-phone-alt" style="font-size: 40px; color: #007bff;"></i>
-            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف 3</h3>
-            <p style="font-size: 16px; color: #555;">+964 555 123 456</p>
-            <a href="tel:+964555123456" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
+            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف</h3>
+            <p style="font-size: 16px; color: #555;">96407844171188+</p>
+            <a href="tel:+96407844171188" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
                 <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> اتصال الآن
             </a>
         </div>
     </div>
 </section>
-    <!-- باقي الأقسام -->
-    <section id="about">
-        <h2>نبذة عن ياسر اسكندر</h2>
-        <p>نائب برلماني يسعى لخدمة المواطنين من خلال برامج تنموية ومشاريع هادفة.</p>
-    </section>
-
-<section id="services">
-    <h2>الخدمات</h2>
-
-    <div class="service">
-        <img src="icons/service1.png" alt="خدمة 1">
-        <h3>الخدمة الأولى</h3>
-        <p>تفاصيل عن الخدمة الأولى التي يقدمها النائب ياسر اسكندر.</p>
-    </div>
-
-    <div class="service">
-        <img src="icons/service2.png" alt="خدمة 2">
-        <h3>الخدمة الثانية</h3>
-        <p>تفاصيل عن الخدمة الثانية لمساعدة المواطنين.</p>
-    </div>
-
-    <div class="service">
-        <img src="icons/service3.png" alt="خدمة 3">
-        <h3>الخدمة الثالثة</h3>
-        <p>وصف للخدمة الثالثة ضمن الخدمات المتاحة.</p>
-    </div>
-
-    <div class="service">
-        <img src="icons/service4.png" alt="خدمة 4">
-        <h3>الخدمة الرابعة</h3>
-        <p>شرح مختصر عن الخدمة الرابعة المميزة.</p>
-    </div>
-
-</section>
-<!-- زر للانتقال إلى قسم "كتب النائب" من الصفحة الرئيسية -->
-<a href="books.html" class="btn btn-books">
-    <i class="fas fa-book"></i> كتب النائب
-</a>
-
-
-
-
-
-<a href="contact.html" class="btn btn-contact">
-    <i class="fas fa-headset"></i> خدمة العملاء
-</a>
-
-    <section id="opinions">
-        <h2>آراء المواطنين</h2>
-        <p>شارك برأيك حول أداء النائب.</p>
-    </section>
-
-<a href="posts.html" class="btn-posts">
-    <i class="fas fa-newspaper"></i> عرض المنشورات
-</a>
 <!-- إضافة مكتبة Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <section id="social-media">
     <h2>التواصل الاجتماعي</h2>
-    <p>تابعوا النائب ياسر اسكندر على منصات التواصل الاجتماعي:</p>
+    <p>تابعوا النائب ياسر اسكندر على منصات التواصل الاجتماعي :</p>
 
     <div class="social-icons">
-        <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://t.me/" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
-        <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/share/15FPRMJJee/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://t.me/YasserAskander" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://www.instagram.com/yasseraskander?igsh=NmVtN2JzbzZ1MDRp" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/YasserAskander" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@YasserAskander" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B9647874404446" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
     </div>
 </section>
     <footer>
