@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المنشورات - ياسر اسكندر</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="posts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
-    <h1>📜 المنشورات</h1>
+    <h1>اهم منشورات النائب ياسر اسكندر وتوت</h1>
 </header>
-
+<p id="post-count">عدد المنشورات: <span>0</span></p>
+<button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
 <section id="posts">
     <div class="post">
-        <img src="images/post1.jpg" alt="منشور 1">
+        <img src="ser2.jpg" alt="منشور 1">
         <h3>عنوان المنشور الأول</h3>
         <p>هذا هو محتوى المنشور الأول الذي يحتوي على تفاصيل حول موضوع معين.</p>
     </div>
@@ -24,6 +25,7 @@
         <img src="images/post2.jpg" alt="منشور 2">
         <h3>عنوان المنشور الثاني</h3>
         <p>تفاصيل المنشور الثاني يمكن أن تكون أخبارًا أو مقالات مهمة.</p>
+        
     </div>
 
     <div class="post">
@@ -31,31 +33,59 @@
         <h3>عنوان المنشور الثالث</h3>
         <p>محتوى المنشور الثالث هنا.</p>
     </div>
+
+    <!-- إضافة المنشورات الجديدة تلقائياً -->
+    <div class="post">
+        <img src="images/post4.jpg" alt="منشور 4">
+        <h3>عنوان المنشور الرابع</h3>
+        <p>هذا محتوى المنشور الرابع.</p>
+    </div>
+
+    <div class="post">
+        <img src="images/post5.jpg" alt="منشور 5">
+        <h3>عنوان المنشور الخامس</h3>
+        <p>هذا محتوى المنشور الخامس.</p>
+    </div>
 </section>
 
-<button id="load-more"><i class="fas fa-plus"></i> عرض المزيد</button>
 <a href="index.html" class="btn btn-home">
     <i class="fas fa-home"></i> العودة إلى الرئيسية
 </a>
+<section id="social-media">
+    <h2>التواصل الاجتماعي</h2>
+    <p>تابعوا النائب ياسر اسكندر على منصات التواصل الاجتماعي :</p>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/15FPRMJJee/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://t.me/YasserAskander" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://www.instagram.com/yasseraskander?igsh=NmVtN2JzbzZ1MDRp" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/YasserAskander" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@YasserAskander" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B9647874404446" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة - ياسر اسكندر</p>
+    </footer>
 <script>
-document.getElementById("load-more").addEventListener("click", function() {
-    let postsContainer = document.getElementById("posts");
+document.addEventListener("DOMContentLoaded", function() {
+    let count = document.querySelectorAll(".post").length;
+    document.querySelector("#post-count span").textContent = count;
+});
 
-    let newPosts = [
-        { img: "images/post4.jpg", title: "منشور جديد 1", content: "هذا محتوى المنشور الجديد الأول." },
-        { img: "images/post5.jpg", title: "منشور جديد 2", content: "هذا محتوى المنشور الجديد الثاني." }
-    ];
+window.addEventListener("scroll", function() {
+    let button = document.getElementById("scrollToTop");
+    if (window.scrollY > 200) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+});
 
-    newPosts.forEach(post => {
-        let postDiv = document.createElement("div");
-        postDiv.classList.add("post", "fade-in");
-        postDiv.innerHTML = `<img src="${post.img}" alt="صورة المنشور">
-                             <h3>${post.title}</h3>
-                             <p>${post.content}</p>`;
-        postsContainer.appendChild(postDiv);
-    });
+document.getElementById("scrollToTop").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 </script>
-
+</script>
 </body>
 </html>
