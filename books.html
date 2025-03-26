@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>كتب النائب ياسر اسكندر</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* تنسيق قسم "كتب النائب" */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            direction: rtl;
+        }
+
+        #books {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #books h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* تنسيق قائمة الكتب */
+        .books-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* تنسيق عنصر الكتاب */
+        .book-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* تأثير عند مرور الماوس على الكتاب */
+        .book-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* تنسيق صورة الكتاب */
+        .book-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* تنسيق عنوان الكتاب */
+        .book-info h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* تنسيق وصف الكتاب */
+        .book-info p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* زر التحميل */
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-download i {
+            margin-right: 8px;
+        }
+
+        .btn-download:hover {
+            background-color: #0056b3;
+        }
+
+        /* زر العودة للصفحة الرئيسية */
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
+        .btn-home i {
+            margin-right: 8px;
+        }
+
+        .btn-home:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<!-- قسم "كتب النائب" -->
+<section id="books">
+    <h2>كتب النائب ياسر اسكندر</h2>
+    <div class="books-list">
+        <!-- كتاب 1 -->
+        <div class="book-item">
+            <img src="book-cover-1.jpg" alt="كتاب 1" class="book-image">
+            <div class="book-info">
+                <h3>عنوان الكتاب 1</h3>
+                <p>وصف الكتاب 1. هذا هو محتوى الكتاب وصفه بشكل احترافي وملخصه هنا.</p>
+                <a href="path/to/book1.pdf" class="btn btn-download" download>
+                    <i class="fas fa-download"></i> تحميل الكتاب
+                </a>
+            </div>
+        </div>
+        <!-- كتاب 2 -->
+        <div class="book-item">
+            <img src="book-cover-2.jpg" alt="كتاب 2" class="book-image">
+            <div class="book-info">
+                <h3>عنوان الكتاب 2</h3>
+                <p>وصف الكتاب 2. محتوى الكتاب مع تفاصيله وملخصه هنا.</p>
+                <a href="path/to/book2.pdf" class="btn btn-download" download>
+                    <i class="fas fa-download"></i> تحميل الكتاب
+                </a>
+            </div>
+        </div>
+        <!-- يمكن إضافة المزيد من الكتب هنا بنفس التنسيق -->
+    </div>
+    
+    <!-- زر العودة للصفحة الرئيسية -->
+    <a href="index.html" class="btn btn-home">
+        <i class="fas fa-home"></i> العودة إلى الرئيسية
+    </a>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+      <link rel="icon" type="image/png" href="site.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الموقع الرسمي للنائب العراقي ياسر اسكندر وتوت</title>
+      <!-- Meta tags for link preview -->
+    <meta name="description" content="الموقع الرسمي للنائب ياسر اسكندر وتوت">
+    <meta property="og:title" content="النائب ياسر اسكندر وتوت">
+    <meta property="og:description" content="نائب عراقي الاضل">
+    <meta property="og:image" content="site.jpg">
+    <meta property="og:url" content="www.yasser-lraq.free.nf">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card for link preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="النائب ياسر اسكندر وتوت ">
+    <meta name="twitter:description" content="الموقع الرسمي للنائب ياسر اسكندر وتوت ">
+    <meta name="twitter:image" content="site.jpg">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header>
+        <div class="container">
+            <img src="yaseer.jpg" alt="شعار" class="small-logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">نبذة</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#location">الموقع الجغرافي</a></li>
+                    <li><a href="#contact">خدمة العملاء</a></li>
+                    <li><a href="#opinions">الآراء</a></li>
+                    <li><a href="#posts">المنشورات</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- العنوان مع الأيقونة -->
+<div class="header">
+    <img src="lraq.ico" alt="الشعار العراقي" class="icon">
+    <h1>ياسر اسكندر</h1>
+</div>
+
+<style>
+    /* تصميم العنوان */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Arial', sans-serif;
+        margin-top: 50px;
+    }
+
+    /* تصميم الأيقونة */
+    .icon {
+        width: 50px; /* عرض الأيقونة */
+        height: auto;
+        margin-right: 15px;
+    }
+
+    /* تصميم النص */
+    h1 {
+        color: #FFD700; /* اللون الذهبي */
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* تأثير الظل على النص */
+    }
+</style>
+    <!-- زر الرجوع إلى الأعلى -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+<style>
+    /* تصميم الزر */
+    #myBtn {
+        display: none; /* الزر مخفي بشكل افتراضي */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 100;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease; /* تأثير الانتقال */
+    }
+
+    #myBtn:hover {
+        background-color: #0056b3;
+        transform: scale(1.1); /* تكبير الزر عند التمرير عليه */
+    }
+</style>
+
+<script>
+    // عندما يمرر المستخدم الصفحة لأسفل
+    window.onscroll = function() {
+        const myBtn = document.getElementById("myBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            myBtn.style.display = "block"; // إظهار الزر
+            myBtn.style.opacity = "1"; // إظهار الزر تدريجيًا
+            myBtn.style.transform = "translateY(0)"; // جعل الزر في مكانه
+        } else {
+            myBtn.style.opacity = "0"; // إخفاء الزر تدريجيًا
+            myBtn.style.transform = "translateY(20px)"; // إخفاء الزر عن طريق تحريكه للأسفل
+            setTimeout(() => { myBtn.style.display = "none"; }, 300); // تأخير إخفاء الزر بعد الانتقال
+        }
+    };
+
+    // عندما ينقر المستخدم على الزر
+    function topFunction() {
+        document.body.scrollTop = 0; // للمتصفحات التي تستخدم scrollTop
+        document.documentElement.scrollTop = 0; // للمتصفحات الحديثة
+    }
+</script>
+    
+    <section id="countdown" style="text-align: center; padding: 30px; background-color: #f8f9fa;">
+    <h2>العد التنازلي للحدث القادم</h2>
+    <div id="countdown-timer" style="font-size: 24px; font-weight: bold;"></div>
+</section>
+
+<script>
+    const targetDate = new Date("2025-05-01T00:00:00Z");
+
+    function updateCountdown() {
+        const now = new Date();
+        const timeLeft = targetDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown-timer').textContent = `${days} يوم, ${hours} ساعة, ${minutes} دقيقة, ${seconds} ثانية`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+    <!-- قسم التاريخ والوقت -->
+<section id="date-time" style="text-align: center; padding: 30px 0; background-color: #f8f9fa;">
+    <div style="font-size: 24px; color: #333;">
+        <!-- أيقونة التاريخ -->
+        <i class="fas fa-calendar-day" style="font-size: 32px; color: #4CAF50;"></i>
+        <div id="current-date" style="margin-top: 10px; font-size: 20px; font-weight: bold;"></div>
+    </div>
+    <div style="margin-top: 20px; font-size: 24px; color: #333;">
+        <!-- أيقونة الوقت -->
+        <i class="fas fa-clock" style="font-size: 32px; color: #4CAF50;"></i>
+        <div id="current-time" style="margin-top: 10px; font-size: 20px; font-weight: bold;"></div>
+    </div>
+</section>
+
+<!-- إضافة رابط لأيقونات Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+<!-- كود JavaScript لعرض التاريخ والوقت -->
+<script>
+    function updateDateTime() {
+        // الحصول على التاريخ والوقت الحالي
+        const currentDate = new Date();
+
+        // تنسيق التاريخ
+        const dateString = currentDate.toLocaleDateString('ar-EG', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // تنسيق الوقت بنظام 12 ساعة (توقيت بغداد)
+        const options = {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true,
+            timeZone: 'Asia/Baghdad' // تحديد المنطقة الزمنية
+        };
+        const timeString = currentDate.toLocaleTimeString('ar-EG', options);
+
+        // الحصول على اليوم من التاريخ
+        const days = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+        const dayOfWeek = days[currentDate.getDay()];
+
+        // تحديث النصوص في الصفحة
+        document.getElementById('current-date').textContent = `${dayOfWeek}, ${dateString}`;
+        document.getElementById('current-time').textContent = timeString;
+    }
+
+    // تحديث التاريخ والوقت كل ثانية
+    setInterval(updateDateTime, 1000);
+
+    // استدعاء الوظيفة لتحديث التاريخ والوقت عند تحميل الصفحة
+    updateDateTime();
+</script>
+    <!-- قسم الصور الخاصة بالنائب -->
+<section id="gallery" style="background-color: #f8f9fa; padding: 40px 20px; text-align: center;">
+    <h2 style="font-size: 30px; font-weight: bold; color: #333; margin-bottom: 30px;">صور النائب ياسر اسكندر</h2>
+    <div class="gallery-container" style="display: flex; overflow-x: scroll; gap: 20px; padding: 10px 0; scroll-snap-type: x mandatory;">
+        <!-- الصورة الأولى -->
+        <div class="gallery-item" style="flex: 0 0 auto; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+            <img src="images/1.jpg" alt="صورة النائب 1" class="gallery-image" style="width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s ease;">
+        </div>
+
+        <!-- الصورة الثانية -->
+        <div class="gallery-item" style="flex: 0 0 auto; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+            <img src="images/2.jpg" alt="صورة النائب 2" class="gallery-image" style="width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s ease;">
+        </div>
+
+        <!-- الصورة الثالثة -->
+        <div class="gallery-item" style="flex: 0 0 auto; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+            <img src="images/3.jpg" alt="صورة النائب 3" class="gallery-image" style="width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s ease;">
+        </div>
+
+        <!-- أضف المزيد من الصور هنا -->
+    </div>
+
+    <!-- مؤشر التمرير لعرض المزيد من الصور -->
+    <div style="margin-top: 20px;">
+        <span style="font-size: 16px; color: #333; font-weight: bold;">اسحب لعرض المزيد من الصور</span>
+        <div style="margin-top: 10px; width: 40px; height: 4px; background: #ccc; border-radius: 20px; position: relative; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: #007bff; animation: scroll-indicator 1.5s infinite;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- إضافة JavaScript لتأثير التكبير عند التمرير -->
+<script>
+    // الحصول على جميع الصور داخل المعرض
+    const images = document.querySelectorAll('.gallery-image');
+
+    // إضافة حدث التمرير لكل صورة
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            image.style.transform = 'scale(1.1)'; // تكبير الصورة
+        });
+
+        image.addEventListener('mouseout', () => {
+            image.style.transform = 'scale(1)'; // العودة للحجم الأصلي
+        });
+    });
+</script>
+
+<!-- إضافة CSS للأنيميشن الخاصة بمؤشر التمرير -->
+<style>
+    @keyframes scroll-indicator {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0); }
+        100% { transform: translateX(100%); }
+    }
+</style>
+<!-- قسم أرقام الهاتف -->
+<section id="contact-numbers" style="background-color: #f8f9fa; padding: 40px 20px; text-align: center;">
+    <h2 style="font-size: 30px; font-weight: bold; color: #333; margin-bottom: 30px;">أرقام الهاتف</h2>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+        <!-- الرقم الأول -->
+        <div style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
+            <i class="fas fa-phone-alt" style="font-size: 40px; color: #007bff;"></i>
+            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف 1</h3>
+            <p style="font-size: 16px; color: #555;">+964 123 456 789</p>
+            <a href="tel:+964123456789" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
+                <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> اتصال الآن
+            </a>
+        </div>
+        
+        <!-- الرقم الثاني -->
+        <div style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
+            <i class="fas fa-phone-alt" style="font-size: 40px; color: #007bff;"></i>
+            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف 2</h3>
+            <p style="font-size: 16px; color: #555;">+964 987 654 321</p>
+            <a href="tel:+964987654321" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
+                <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> اتصال الآن
+            </a>
+        </div>
+
+        <!-- الرقم الثالث -->
+        <div style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
+            <i class="fas fa-phone-alt" style="font-size: 40px; color: #007bff;"></i>
+            <h3 style="font-size: 20px; font-weight: bold; margin: 20px 0; color: #333;">رقم الهاتف 3</h3>
+            <p style="font-size: 16px; color: #555;">+964 555 123 456</p>
+            <a href="tel:+964555123456" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-top: 20px;">
+                <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> اتصال الآن
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- باقي الأقسام -->
+    <section id="about">
+        <h2>نبذة عن ياسر اسكندر</h2>
+        <p>نائب برلماني يسعى لخدمة المواطنين من خلال برامج تنموية ومشاريع هادفة.</p>
+    </section>
+
+<section id="services">
+    <h2>الخدمات</h2>
+
+    <div class="service">
+        <img src="icons/service1.png" alt="خدمة 1">
+        <h3>الخدمة الأولى</h3>
+        <p>تفاصيل عن الخدمة الأولى التي يقدمها النائب ياسر اسكندر.</p>
+    </div>
+
+    <div class="service">
+        <img src="icons/service2.png" alt="خدمة 2">
+        <h3>الخدمة الثانية</h3>
+        <p>تفاصيل عن الخدمة الثانية لمساعدة المواطنين.</p>
+    </div>
+
+    <div class="service">
+        <img src="icons/service3.png" alt="خدمة 3">
+        <h3>الخدمة الثالثة</h3>
+        <p>وصف للخدمة الثالثة ضمن الخدمات المتاحة.</p>
+    </div>
+
+    <div class="service">
+        <img src="icons/service4.png" alt="خدمة 4">
+        <h3>الخدمة الرابعة</h3>
+        <p>شرح مختصر عن الخدمة الرابعة المميزة.</p>
+    </div>
+
+</section>
+<!-- زر للانتقال إلى قسم "كتب النائب" من الصفحة الرئيسية -->
+<a href="books.html" class="btn btn-books">
+    <i class="fas fa-book"></i> كتب النائب
+</a>
+
+
+
+
+
+<a href="contact.html" class="btn btn-contact">
+    <i class="fas fa-headset"></i> خدمة العملاء
+</a>
+
+    <section id="opinions">
+        <h2>آراء المواطنين</h2>
+        <p>شارك برأيك حول أداء النائب.</p>
+    </section>
+
+<a href="posts.html" class="btn-posts">
+    <i class="fas fa-newspaper"></i> عرض المنشورات
+</a>
+<!-- إضافة مكتبة Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<section id="social-media">
+    <h2>التواصل الاجتماعي</h2>
+    <p>تابعوا النائب ياسر اسكندر على منصات التواصل الاجتماعي:</p>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://t.me/" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة - ياسر اسكندر</p>
+    </footer>
+
+</body>
+</html>

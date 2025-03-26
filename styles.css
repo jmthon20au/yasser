@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.landing {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+header {
+    background: #222;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.small-logo {
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    width: 80%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box {
+    background: #ffcc00;
+    color: black;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+}
+#services {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+}
+#social-media {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#social-media h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#social-media p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.social-icons .facebook { background: #1877F2; }
+.social-icons .telegram { background: #0088CC; }
+.social-icons .instagram { background: #E4405F; }
+.social-icons .twitter { background: #1DA1F2; }
+.social-icons .youtube { background: #FF0000; }
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+/* زر المنشورات في الصفحة الرئيسية */
+.btn-posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-posts i {
+    font-size: 20px;
+}
+
+.btn-posts:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* تنسيق المنشورات */
+#posts {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* تأثير ظهور المنشورات */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأثير عند تحميل منشورات جديدة */
+.fade-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* صور المنشورات */
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* زر عرض المزيد */
+#load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#load-more i {
+    font-size: 18px;
+}
+
+#load-more:hover {
+    background: #218838;
+    transform: scale(1.1);
+}
+/* تصميم الأزرار */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}
+
+/* زر خدمة العملاء */
+.btn-contact {
+    background-color: #28a745;
+}
+
+.btn-contact:hover {
+    background-color: #218838;
+}
+
+/* تنسيق الأيقونات داخل الأزرار */
+.btn i {
+    margin-right: 8px;
+}

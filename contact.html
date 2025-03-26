@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمة العملاء - ياسر اسكندر</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>💬 خدمة العملاء</h1>
+</header>
+
+<section id="contact">
+    <form id="contact-form">
+        <div class="input-group">
+            <label for="name"><i class="fas fa-user"></i> الاسم الكامل</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="address"><i class="fas fa-map-marker-alt"></i> العنوان</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="message"><i class="fas fa-comment"></i> الرسالة</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" id="send-btn"><i class="fas fa-paper-plane"></i> إرسال</button>
+    </form>
+<!-- زر العودة إلى الصفحة الرئيسية -->
+<a href="index.html" class="btn btn-home">
+    <i class="fas fa-home"></i> العودة إلى الرئيسية
+</a>
+
+<!-- زر الدخول إلى خدمة العملاء -->
+
+    <p id="success-message" class="hidden">✅ تم إرسال رسالتك بنجاح!</p>
+</section>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch("send_email.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("success-message").classList.remove("hidden");
+        document.getElementById("contact-form").reset();
+    })
+    .catch(error => console.error("Error:", error));
+});
+</script>
+
+</body>
+</html>

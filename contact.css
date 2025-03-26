@@ -1,0 +1,131 @@
+/* تحسين مظهر حاوية خدمة العملاء */
+#contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center; /* محاذاة النصوص في الوسط */
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* تحسين شكل العناوين */
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+    text-align: center; /* محاذاة العنوان في الوسط */
+}
+
+/* تحسين شكل الحقول */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.3);
+    text-align: center; /* محاذاة النص في الحقول في الوسط */
+}
+
+/* تحسين شكل الحقول عند التركيز */
+.input-group input:focus,
+.input-group textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    transform: scale(1.03);
+}
+
+/* تحسين شكل زر الإرسال */
+#send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#send-btn:hover {
+    background: #ff9900;
+    transform: scale(1.1);
+}
+
+/* تأثير ظهور الحاوية */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تحسين رسالة النجاح */
+#success-message {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    text-align: center; /* محاذاة الرسالة في الوسط */
+}
+
+/* إخفاء الرسالة حتى يتم الإرسال */
+.hidden {
+    display: none;
+}
+/* تصميم الأزرار */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* زر العودة إلى الصفحة الرئيسية */
+.btn-home {
+    background-color: #007bff;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}
+
+/* زر خدمة العملاء */
+
+.btn-contact:hover {
+    background-color: #218838;
+}
+
+/* تنسيق الأيقونات داخل الأزرار */
+.btn i {
+    margin-right: 8px;
+}
