@@ -185,28 +185,31 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 15px;
 }
 
 .social-icons a {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    align-items: center;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    font-size: 24px;
     color: white;
-    transition: transform 0.3s ease-in-out, background 0.3s;
+    font-size: 20px;
+    transition: 0.3s;
 }
 
-.social-icons .facebook { background: #1877F2; }
-.social-icons .telegram { background: #0088CC; }
-.social-icons .instagram { background: #E4405F; }
-.social-icons .twitter { background: #1DA1F2; }
-.social-icons .youtube { background: #FF0000; }
+.facebook { background: #1877f2; }
+.telegram { background: #0088cc; }
+.instagram { background: #e4405f; }
+.twitter { background: #1da1f2; }
+.tiktok { background: #000; } /* لون تيك توك أسود */
+.whatsapp { background: #25d366; } /* لون واتساب أخضر */
 
 .social-icons a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 /* زر المنشورات في الصفحة الرئيسية */
 .btn-posts {
@@ -350,3 +353,141 @@ footer {
 .btn i {
     margin-right: 8px;
 }
+.about-section {
+    background: linear-gradient(135deg, #004aad, #00aaff);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.about-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #004aad;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-content {
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+
+.about-content p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    background: #f0f8ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #222;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-content ul li:hover {
+    background: #00aaff;
+    color: #fff;
+}
+
+.about-content span {
+    color: #004aad;
+    font-weight: bold;
+    font-size: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+#services {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+#services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.service p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.service p span {
+    font-weight: bold;
+    color: #b22222;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%;
+    }
+    }
